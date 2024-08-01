@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dibwj51a8gdjh"]
+
+[ext_resource type="Script" path="res://components/Object/apple.gd" id="1_mgdym"]
+[ext_resource type="Texture2D" uid="uid://b3xvx6wus7uxv" path="res://assets/Sprout Lands/Objects/Basic_Grass_Biom_things.png" id="1_uehjw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4riao"]
+
+[node name="Apple" type="Area2D" groups=["Apple"]]
+script = ExtResource("1_mgdym")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_4riao")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_uehjw")
+region_enabled = true
+region_rect = Rect2(32, 32, 16, 16)

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://de2s5bs16im4r"]
+
+[ext_resource type="Script" path="res://components/Object/bushes.gd" id="1_2q02w"]
+[ext_resource type="Texture2D" uid="uid://b3xvx6wus7uxv" path="res://assets/Sprout Lands/Objects/Basic_Grass_Biom_things.png" id="1_seds4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_f80bl"]
+
+[node name="Bushes" type="Area2D"]
+script = ExtResource("1_2q02w")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_f80bl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_seds4")
+region_enabled = true
+region_rect = Rect2(16, 48, 16, 16)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 60.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

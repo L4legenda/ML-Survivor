@@ -1,0 +1,63 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvivtgy48e005"]
+
+[ext_resource type="PackedScene" uid="uid://c0k1vvyxotqda" path="res://scene/level/level.tscn" id="1_3c8xm"]
+[ext_resource type="Script" path="res://addons/godot_rl_agents/sync.gd" id="2_bkrdt"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Level" parent="." instance=ExtResource("1_3c8xm")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(0.1, 0.1)
+
+[node name="Sync" type="Node" parent="."]
+script = ExtResource("2_bkrdt")
+speed_up = 16.0
+
+[node name="Level2" parent="." instance=ExtResource("1_3c8xm")]
+position = Vector2(2136, 0)
+
+[node name="Level3" parent="." instance=ExtResource("1_3c8xm")]
+position = Vector2(-2152, 0)
+
+[node name="Level4" parent="." instance=ExtResource("1_3c8xm")]
+position = Vector2(-16, -1344)
+
+[node name="Level5" parent="." instance=ExtResource("1_3c8xm")]
+position = Vector2(2136, -1336)
+
+[node name="Level6" parent="." instance=ExtResource("1_3c8xm")]
+position = Vector2(-2152, -1312)
+
+[node name="Level7" parent="." instance=ExtResource("1_3c8xm")]
+position = Vector2(0, 1336)
+
+[node name="Level8" parent="." instance=ExtResource("1_3c8xm")]
+position = Vector2(-2168, 1328)
+
+[node name="Level9" parent="." instance=ExtResource("1_3c8xm")]
+position = Vector2(2144, 1336)
+
+[node name="Level10" parent="." instance=ExtResource("1_3c8xm")]
+position = Vector2(0, 2659)
+
+[node name="Level11" parent="." instance=ExtResource("1_3c8xm")]
+position = Vector2(-2172, 2670)
+
+[node name="Level12" parent="." instance=ExtResource("1_3c8xm")]
+position = Vector2(2150, 2681)
+
+[node name="Level13" parent="." instance=ExtResource("1_3c8xm")]
+position = Vector2(4288, 0)
+
+[node name="Level14" parent="." instance=ExtResource("1_3c8xm")]
+position = Vector2(4288, -1324)
+
+[node name="Level15" parent="." instance=ExtResource("1_3c8xm")]
+position = Vector2(-11, -2715)
+
+[node name="Level16" parent="." instance=ExtResource("1_3c8xm")]
+position = Vector2(2126, -2704)
+
+[node name="Level17" parent="." instance=ExtResource("1_3c8xm")]
+position = Vector2(-2180, -2691)

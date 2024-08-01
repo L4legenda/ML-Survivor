@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://dikh4qa2qpq8"]
+
+[ext_resource type="Script" path="res://components/Object/wall_dead.gd" id="1_hciep"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bnqa7"]
+size = Vector2(30.5, 444)
+
+[node name="WallDead" type="Area2D"]
+script = ExtResource("1_hciep")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_bnqa7")
